@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+:root{
+    --cyan: hsl(178, 100%, 50%);
+    --Soft-blue: hsl(215, 51%, 70%);
+    --White: hsl(0, 0%, 100%);
+    /* main bg  */
+    --dark-blue: hsl(217, 54%, 11%);
+    /* card bg  */
+    --dark-blue-card: hsl(216, 50%, 16%);
+    /* line  */
+    --dark-blur-line: hsl(215, 32%, 27%);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;  
+}
+body{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    background-color: var(--dark-blue);
+}
+.container{
+    background-color: var(--dark-blue-card);
+    border-radius: 10px;
+    
+}
+.container > img {
+    padding: 15px;
+    border-radius: 20px;
+    width: 280px;
+    height: 280px;
+}
+.text{
+    padding: 0px 15px;
+}
+.text > .title{
+    color: var(--White);
+    font-weight: 600;
+    padding-bottom: 15px;
+}
+.text > .para{
+    color: var(--Soft-blue);
+    padding-bottom: 15px;
+    line-height: 25px;
+}
+.price{
+    display: flex;
+    justify-content: space-between;
+}
+.get{
+    display: flex;
+    gap: 5px;
+}
+.get > p{
+    color: var(--cyan);
+}
+.got{
+    display: flex;
+    gap: 5px;
+}
+.got > p{
+    color: var(--Soft-blue);
+}
+.footer{
+    display: flex;
+    padding-bottom: 20px;
+    gap: 10px;
+}
+.style{
+    margin: 10px 0px;
+    border-top: 1px solid var(--dark-blur-line); 
+    border-bottom: 1px solid var(--dark-blur-line);
+}
+.footer > img {
+    width: 20px;
+    height: 20px;
+    border: 1px solid var(--White);
+    border-radius: 50%;
+}
+.footer > p{
+    color: var(--Soft-blue);
+}
+p > .name{
+    color: var(--White);
+}
