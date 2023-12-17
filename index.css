@@ -29,12 +29,41 @@ body{
     border-radius: 10px;
     
 }
-.container > img {
+.image{
+    position: relative;
+}
+.image > .image-nft {
     padding: 15px;
     border-radius: 20px;
     width: 280px;
+    cursor: pointer;
     height: 280px;
+    opacity: 1;
+    transition: .5 ease;
+    display: block;
+    backface-visibility: hidden;
 }
+
+.image:hover .image-nft{
+    opacity: 0.3;
+   
+}
+.image:hover .middle{
+    opacity: 1;
+    
+}
+.middle{
+    transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+ 
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  
+}
+
 .text{
     padding: 0px 15px;
 }
@@ -42,6 +71,10 @@ body{
     color: var(--White);
     font-weight: 600;
     padding-bottom: 15px;
+}
+.title:hover{
+    color: var(--cyan);
+    cursor: pointer;
 }
 .text > .para{
     color: var(--Soft-blue);
